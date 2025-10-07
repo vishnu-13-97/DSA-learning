@@ -14,3 +14,4 @@ return -1
 
 }
 console.log(linear(arr,target));
+// Time Complexity O(n)
