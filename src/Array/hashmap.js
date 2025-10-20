@@ -7,11 +7,12 @@ function hashm(nums,target){
 
    for(let i=0;i<nums.length;i++){
     let balance = target-nums[i];
+if(map.has(balance)){
+  return [map.get(balance),i]
+}else{
+  map.set(nums[i],i)
+}
 
-    if(map.has(balance)){
-        return [map.get(balance),i]
-    }
-     map.set(nums[i],i)
    }
    
 
